@@ -1,0 +1,22 @@
+h1{
+    color: blueviolet;
+}
+header{
+    text-align: center;
+}
+article{
+    text-align: center;
+}
+.is{
+    width: 1080px; 
+    height: 60%;
+}
+html{
+    background-color: black;
+}
+p{
+    color: aliceblue;
+}
+footer p{
+    text-align: center;
+}

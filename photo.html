@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/photos.css">
+    <title>關於攝影</title>
+</head>
+<body>
+        <script type="text/javascript">
+            //隨機播放陣列中指定的圖檔
+            var jsImg = new Array("./pic/IMG_0618.JPG","./pic/IMG_1410.JPG");
+                        //設定每兩秒執行一次randomImg() ，此行要在 function 之外
+                        setInterval("randomImg()",2000);
+                        function randomImg(){
+                        //陣列的長度 * 介於0~1間數字 ，然後在取 floor 當照片索引值
+                        var imgIndex = Math.floor(Math.random()*jsImg.length);
+                        document.getElementById("my_div").innerHTML  = "<img src='"+jsImg[imgIndex]+"' width=960 height=640>";
+                        }       
+                
+                </script>
+                <script type="text/javascript">
+                 //循序播放陣列中指定的圖檔
+                        var jsImg = new Array("./pic/IMG_0618.JPG","./pic/IMG_1410.JPG");
+                        var jsImg_len = jsImg.length;  // 圖檔數量
+                        // 要用另一個變數存，是不想在 function 中每次都要算陣列的大小
+                        var i=1;                       //起始照片  2 為 003.jpg
+                        //設定每兩秒執行一次sequentialImg() ，此行要在 function 之外
+                        setInterval("sequentialImg()",2000);
+                        function sequentialImg(){  //循序播放
+                            document.getElementById("my_div").innerHTML  = "<img src='"+jsImg[i]+"' width=960 height=640>";        
+                                i++;
+                                if(i>=jsImg_len)  i=0;
+                        }
+                        </script>
+
+
+
+
+
+    <div>
+        <header>
+            <div>
+              <h1>關於攝影</h1>
+              <p>這是在高中大學才開始培養的興趣，很喜歡按下快門拍下照片的那一瞬間</p>
+              <a>相機 CANON 77D</a>        
+            </div>
+            
+        </header>
+    </div>
+
+    <div class="container-fluid">
+            <div class="row">
+                
+                    <div class="col-md-3 col-sm-6 x">
+                        <a href="./index.html">回到首頁</a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 x">
+                        <a href="./profilechi.html">個人檔案</a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 x">
+                        <a href="./photo.html">關於攝影</a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 x">
+                        <a href="./food.html">關於食物</a>
+                    </div>
+                
+        
+            </div>
+        </div>
+        
+        <div id="my_div" class="vi"></div>
+        <div class="container-fluid">
+                <footer>
+                    <br><br>
+                    <p>credit by Wen-Hsiang Hsieh</p>
+                </footer>
+        
+            </div>   
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>    
+</body>
+</html>

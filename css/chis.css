@@ -1,0 +1,48 @@
+body{
+    padding:0;
+    margin:0;
+    background-color: black;
+}
+
+.x{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    margin-bottom:10px;
+    font-family :'微軟正黑體';
+    padding: 10px;
+}
+.boxz img{
+    display:block;
+    margin: auto;
+    width: 50%;
+   
+}
+.boxp{
+    
+    align-items: center;
+    font-family: '微軟正黑體';
+    color:white;
+    padding:1vw;
+   
+}
+.sidebar{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+header{
+    text-align: center;
+    font-family: '微軟正黑體';
+    color: white;
+}
+footer p{
+    text-align: center;
+}
+.word{
+    color:aquamarine;
+}
